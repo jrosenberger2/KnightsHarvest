@@ -30,7 +30,7 @@ def getMetrics(date, df):
 
 st.set_page_config(layout='wide')
 
-st.header('Monthly Totals')
+st.header('Monthly Totals', divider='red')
 date = st.date_input(label='Please Choose the Month you Would like Metrics for:', value=datetime.date(datetime.date.today().year, datetime.date.today().month,1), format='MM/DD/YYYY')
 st.write('The following metrics are totalled from the date selected untill the 1st of the following month.')
 getMetrics(date, st.session_state['pantryDf'])
@@ -38,5 +38,5 @@ st.dataframe(st.session_state['pantryMetrics'], hide_index=True)
 
 st.container(height=50,border=False)
 
-st.header('Knight\'s Pantry Data')
+st.header('Knight\'s Pantry Data', divider='red')
 st.dataframe(st.session_state['pantryDf'], hide_index=True)
