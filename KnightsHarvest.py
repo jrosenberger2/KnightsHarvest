@@ -179,8 +179,8 @@ if 'pantryMetrics' not in st.session_state:
 #if 'closetVisitors' not in st.session_state:
     #st.session_state['closetVisitors'] = closetVisitors(st.session_state['closetDf'])
 
-Homepage = st.Page('0_Homepage.py', title='KnightsHarvest Dashboard', icon=":material/home:")
-Pantry = st.Page('1_KnightsPantry.py', title='Knight\'s Pantry Data', icon=":material/restaurant:")
-Closet = st.Page('2_KnightsCloset.py', title='Knight\'s Closet Data', icon=":material/checkroom:")
+Homepage = st.Page('Dashboard.py', title='KnightsHarvest Dashboard', icon=":material/home:")
+Pantry = st.Page('KnightsPantry.py', title='Knight\'s Pantry Data', icon=":material/restaurant:")
+Closet = st.Page('KnightsCloset.py', title='Knight\'s Closet Data', icon=":material/checkroom:")
 home = st.navigation([Homepage, Pantry, Closet])
 home.run()
