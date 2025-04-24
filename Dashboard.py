@@ -20,7 +20,7 @@ with col1:
 with col2:
     st.subheader('Knight\'s Closet')
     st.write('- ' + str(st.session_state['closetVisits']) + ' Visits this Month')
-    st.write('- ' + str(st.session_state['closetVisitors']) + ' Different People have Visited this Month.')
+    st.write('- ' + str(st.session_state['closetVisitors']) + ' Different People have Visited this Month')
     #st.write('- 0000 All time Visitors')
 
 st.container(height=50,border=False)
