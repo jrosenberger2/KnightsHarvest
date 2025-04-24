@@ -11,8 +11,8 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.subheader('Knight\'s Pantry')
-    st.write('- ' + str(st.session_state['pantryVisits']) +' Visits to Knight\'s Pantry this Month.')
-    st.write('- ' + str(st.session_state['pantryVisitors']) +' Different People have Visited this Month.')
+    st.write('- ' + str(st.session_state['pantryVisits']) +' Visits this Month')
+    st.write('- ' + str(st.session_state['pantryVisitors']) +' Different People have Visited this Month')
     st.write('- ' + str(st.session_state['allTimeVisitors']) + ' Unique all time Visitors')
     #1908
     #st.write('- 0000 All time Visitors')
@@ -20,7 +20,7 @@ with col1:
 with col2:
     st.subheader('Knight\'s Closet')
     st.write('- ' + str(st.session_state['closetVisits']) + ' Visits this Month')
-    st.write('- ' + str(st.session_state['closetVisitors']) + ' Visitors this Month')
+    st.write('- ' + str(st.session_state['closetVisitors']) + ' Different People have Visited this Month.')
     #st.write('- 0000 All time Visitors')
 
 st.container(height=50,border=False)
