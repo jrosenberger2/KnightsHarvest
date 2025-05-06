@@ -5,10 +5,11 @@ import pandas as pd
 def getMetrics(date, df):
     fresh = st.session_state['pantryMetrics']
     #fresh.drop(fresh.index, inplace=True)
+    startDate = datetime.date(date.year, date.month, 1)
     endDate = datetime.date(date.year, date.month+1, 1)
     #print(df['VisitDate'].dtypes)
     #print(type(date))
-    filtered = df[(df['VisitDate'] >= date) & (df['VisitDate'] < endDate)]
+    filtered = df[(df['VisitDate'] >= startDate) & (df['VisitDate'] < endDate)]
     #print(metrics)
     row = []
     row.append(filtered['Num_ToFeed'].sum())
